@@ -1,0 +1,20 @@
+<div class="full-width">
+  <h1 class="center"><b>{{title}}</b></h1>
+</div>
+<div class="container">
+  <div class="timeline timeline-alternating timeline-collapsing timeline-with-arrows blue-red-red">
+
+    <div class="timeline-block" *ngFor="let event of timeline">
+      <div class="timeline-icon timeline-icon-hide-border"><i style="color:#c23b22" class="fa fa-bell-o fa-lg"></i></div>
+      <div class="timeline-content">
+        <h2>{{event.title}}</h2>
+        <p>{{event.beforeText}}</p>
+        <ul>
+          <li *ngFor="let list of event.list">{{list}}</li>
+        </ul>
+        <p>{{event.afterText}}</p>
+        <div class="timeline-date">{{event.date}}</div>
+      </div>
+    </div>
+  </div>
+</div>
