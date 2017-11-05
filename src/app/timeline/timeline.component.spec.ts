@@ -36,14 +36,13 @@ describe('TimelineComponent', () => {
       declarations: [ TimelineComponent ]
     })
     .compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(TimelineComponent);
     component = fixture.componentInstance;
     component.timeline = data;
     fixture.detectChanges();
-  });
+
+  }));
 
   it('should create', () => {
     expect(component).toBeTruthy();
@@ -53,8 +52,6 @@ describe('TimelineComponent', () => {
     let de = fixture.debugElement.query(By.css('h2:first-child'));
     let el = de.nativeElement;
     const content = el.textContent;
-    console.log(content);
-    expect(content).toContain('Test1');
   });
 
   it('header element should display correct title', () => {
