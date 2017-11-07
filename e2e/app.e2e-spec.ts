@@ -1,10 +1,10 @@
-import { ModulesWebpackPage } from './app.po';
+import { ModuleWebpackPage } from './app.po';
 
-describe('modules-webpack App', () => {
-  let page: ModulesWebpackPage;
+describe('module-webpack App', () => {
+  let page: ModuleWebpackPage;
 
   beforeEach(() => {
-    page = new ModulesWebpackPage();
+    page = new ModuleWebpackPage();
   });
 
   it('should display message saying app works', () => {

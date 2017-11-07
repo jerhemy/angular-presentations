@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class ModulesWebpackPage {
+export class ModuleWebpackPage {
   navigateTo() {
     return browser.get('/');
   }
